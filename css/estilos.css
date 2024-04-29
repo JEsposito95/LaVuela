@@ -1,0 +1,682 @@
+div {}
+
+body {
+    background-image: url("img/landing\ base\ h.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+}
+
+.social-icons-container {
+    position: absolute;
+    right: 35%;
+    /* Posiciona el contenedor en la mitad derecha */
+    bottom: 50px;
+    /* Distancia del borde inferior */
+
+    transform: translateX(50%);
+    /* Centramos horizontalmente el contenedor */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 13px;
+    /* Distancia del borde inferior */
+    left: -35px;
+    transform: translateX(-50%) skewY(-7deg);
+    /* Inclinación de la lista */
+    display: flex;
+}
+
+.social-icons li {
+    /*width: 40px;
+    height: 40px;
+    margin: 10px;*/
+    margin-right: 17px;
+    display: inline-block;
+    transform: skewY(6.5deg);
+    /* Contrarrestar la inclinación de la lista */
+}
+
+
+.social-icons li:nth-child(3) .icon-circle {
+    top: 58.5%;
+    left: 13.5%;
+}
+
+.social-icons li:nth-child(4) .icon-circle {
+    top: 58.5%;
+    left: 13.5%;
+}
+
+.social-icons li:nth-child(5) .icon-circle {
+    top: 59%;
+    left: 14%;
+}
+
+
+
+
+.social-icons li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+}
+
+.social-icons li img {
+    width: 35px;
+    /* Ajusta el ancho y alto según tus necesidades */
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons li:hover img {
+    filter: hue-rotate(37deg) brightness(1.2) saturate(1.5);
+    transform: scale(1.1);
+}
+
+
+
+.contenedor2 {
+    position: absolute;
+    /* Utiliza posicionamiento absoluto */
+    bottom: 39px;
+    /* Puedes ajustar la posición según tu diseño */
+    right: 401px;
+    /* Puedes ajustar la posición según tu diseño */
+
+    width: 35px;
+    /* Ajusta el ancho y alto según tus necesidades */
+    height: 35px;
+    z-index: 2;
+    /* Asigna un índice z mayor para que se superponga */
+}
+
+.contenedor2 img {
+    width: 100%;
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contenedor2 img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (min-width: 376px) and (max-width: 479.98px) and (max-height: 800px) {
+
+    body {
+        background-image: url("img/landing\ base\ v.jpg");
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+        /* Distancia del borde inferior */
+        left: -120px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 25px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /*icono wp*/
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 45px;
+        /* Puedes ajustar la posición según tu diseño */
+        right: 305px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 25px;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 25px;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+
+    body {
+        background-image: url("img/landing\ base\ v.jpg");
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 60px;
+        /* Distancia del borde inferior */
+        left: -80px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 25px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /*icono wp*/
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 60px;
+        /* Puedes ajustar la posición según tu diseño */
+        right: 245px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 25px;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 25px;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+    /* Estilos específicos para el iPhone SE */
+
+    body {
+        background-image: url("img/landing\ base\ v.jpg");
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 70px;
+        /* Distancia del borde inferior */
+        left: -80px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 25px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /*icono wp*/
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 60px;
+        /* Puedes ajustar la posición según tu diseño */
+        right: 250px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 25px;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 25px;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+}
+
+@media (max-width: 430px) and (max-height: 932px) {
+    /* Estilos específicos para el iPhone 14 Pro Max */
+    body {
+        background-image: url("img/landing\ base\ v.jpg");
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+        /* Distancia del borde inferior */
+        left: -80px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 25px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /*icono wp*/
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 40px;
+        /* Puedes ajustar la posición según tu diseño */
+        right: 280px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 25px;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 25px;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+  } 
+
+
+
+
+
+/* Para dispositivos pequeños (teléfonos y tabletas) */
+@media (min-width: 576px) and (max-width: 767.98px) and (max-height: 800px) {
+
+    body {
+        background-image: url("img/landing\ base\ v.jpg");
+    }
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 39px;
+        /* Distancia del borde inferior */
+        left: -180px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 25px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /*icono wp*/
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 45px;
+        /* Puedes ajustar la posición según tu diseño */
+        left: 180px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 25px;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 25px;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}
+
+
+
+
+/* Para dispositivos medianos (tabletas y escritorios pequeños) */
+@media (min-width: 768px) and (max-width: 991.98px) and (max-height: 800px) {
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 13px;
+        /* Distancia del borde inferior */
+        left: 5px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        /*width: 40px;
+        height: 40px;
+        margin: 10px;*/
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-icons li:hover img {
+
+        transform: scale(1.1);
+    }
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 25px;
+        /* Puedes ajustar la posición según tu diseño */
+        right: 270px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: auto;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+
+}
+
+
+
+
+
+
+@media (min-width: 480px) and (max-width: 574.98px) and (max-height: 800px) {
+    body {
+        background-image: url("img/landing\ base\ v.jpg");
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 45px;
+        /* Distancia del borde inferior */
+        left: -130px;
+        transform: translateX(-50%) skewY(-7deg);
+        /* Inclinación de la lista */
+        display: flex;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+        display: inline-block;
+        transform: skewY(6.5deg);
+        /* Contrarrestar la inclinación de la lista */
+    }
+
+    .social-icons li img {
+        width: 25px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /*icono wp*/
+
+    .contenedor2 {
+        position: absolute;
+        /* Utiliza posicionamiento absoluto */
+        bottom: 45px;
+        /* Puedes ajustar la posición según tu diseño */
+        right: 360px;
+        /* Puedes ajustar la posición según tu diseño */
+
+        width: 35px;
+        /* Ajusta el ancho y alto según tus necesidades */
+        height: 35px;
+        z-index: 2;
+        /* Asigna un índice z mayor para que se superponga */
+    }
+
+    .contenedor2 img {
+        width: 25px;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 25px;
+        /* Altura automática para mantener la proporción */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}
+
+
+    /* Para dispositivos grandes (escritorios grandes) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            bottom: 13px;
+            /* Distancia del borde inferior */
+            left: -30px;
+            transform: translateX(-50%) skewY(-7deg);
+            /* Inclinación de la lista */
+            display: flex;
+        }
+
+        .social-icons li {
+
+            margin-right: 10px;
+            display: inline-block;
+            transform: skewY(6.5deg);
+            /* Contrarrestar la inclinación de la lista */
+        }
+
+        .social-icons li img {
+            width: 35px;
+            /* Ajusta el ancho y alto según tus necesidades */
+            height: 35px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .social-icons li:hover img {
+
+            transform: scale(1.1);
+        }
+
+        .contenedor2 {
+            position: absolute;
+            /* Utiliza posicionamiento absoluto */
+            bottom: 35px;
+            /* Puedes ajustar la posición según tu diseño */
+            right: 305px;
+            /* Puedes ajustar la posición según tu diseño */
+
+            width: 35px;
+            /* Ajusta el ancho y alto según tus necesidades */
+            height: 35px;
+            z-index: 2;
+            /* Asigna un índice z mayor para que se superponga */
+        }
+
+        .contenedor2 img {
+            width: 100%;
+            /* Ajusta el ancho de la imagen al 100% del contenedor */
+            height: auto;
+            /* Altura automática para mantener la proporción */
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+    }
+
+    /* Para dispositivos extra grandes (escritorios extra grandes) */
+    @media (min-width: 1200px) {
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            bottom: 13px;
+            /* Distancia del borde inferior */
+            left: -30px;
+            transform: translateX(-50%) skewY(-7deg);
+            /* Inclinación de la lista */
+            display: flex;
+        }
+
+        .social-icons li {
+
+            margin-right: 10px;
+            display: inline-block;
+            transform: skewY(6.5deg);
+            /* Contrarrestar la inclinación de la lista */
+        }
+
+        .social-icons li img {
+            width: 35px;
+            /* Ajusta el ancho y alto según tus necesidades */
+            height: 35px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .social-icons li:hover img {
+
+            transform: scale(1.1);
+        }
+
+        .contenedor2 {
+            position: absolute;
+            /* Utiliza posicionamiento absoluto */
+            bottom: 35px;
+            /* Puedes ajustar la posición según tu diseño */
+            right: 400px;
+            /* Puedes ajustar la posición según tu diseño */
+
+            width: 35px;
+            /* Ajusta el ancho y alto según tus necesidades */
+            height: 35px;
+            z-index: 2;
+            /* Asigna un índice z mayor para que se superponga */
+        }
+
+        .contenedor2 img {
+            width: 100%;
+            /* Ajusta el ancho de la imagen al 100% del contenedor */
+            height: auto;
+            /* Altura automática para mantener la proporción */
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+    }
